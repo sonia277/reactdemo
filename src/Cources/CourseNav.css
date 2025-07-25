@@ -1,0 +1,140 @@
+/* .courseNav li{
+    display: inline-block;
+    padding: 0px 20px;
+    font-size: 15px;
+    color: #1e1e1e;
+    font-weight: 500;
+}
+.courseNav{
+    text-align: center;
+    background-color: #e9ecff;
+    max-width: 615px;
+    margin: 0 auto;
+    border-radius: 35px;
+    margin-bottom: 80px;
+    margin-top: 45px;
+}
+.courseNav ul{
+    padding: 15px 40px;
+} */
+.courseNav ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  margin-top: 40px;
+}
+
+.courseNav li {
+  padding: 8px 16px;
+  background-color: #eef0ff;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.courseNav li:hover {
+  background-color: #d3dbff;
+}
+
+.courseNav li.active {
+  background-color: #1f2c5d;
+  color: white;
+}
+.courseNav {
+  text-align: center;
+  background-color: #e9ecff;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 35px;
+  margin-bottom: 80px;
+  margin-top: 45px;
+  padding: 10px 20px;
+  overflow-x: auto;
+}
+
+/* Remove scrollbar (optional for aesthetics) */
+.courseNav::-webkit-scrollbar {
+  display: none;
+}
+
+.courseNav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Individual nav items */
+.courseNav li {
+  padding: 8px 16px;
+  background-color: #eef0ff;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  white-space: nowrap; /* Prevent word break */
+}
+
+.courseNav li:hover {
+  background-color: #d3dbff;
+}
+
+.courseNav li.active {
+  background-color: #1f2c5d;
+  color: white;
+}
+
+/* ✅ Tablet (width <= 1024px) */
+@media (max-width: 1024px) {
+  .courseNav {
+    max-width: 90%;
+    padding: 8px 15px;
+  }
+
+  .courseNav li {
+    padding: 7px 14px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 850px){
+    .courseNav{
+      max-width: 100%;
+    }
+}
+
+/* ✅ Mobile (width <= 600px) */
+@media (max-width: 600px) {
+  .courseNav {
+    max-width: 900%;
+    padding: 6px 10px;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  .courseNav ul {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+  }
+
+  .courseNav li {
+    flex: 0 0 auto;
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+}
+.courseNav ul::-webkit-scrollbar {
+  display: none;
+}
+.courseNav ul {
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}

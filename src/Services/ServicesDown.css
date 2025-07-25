@@ -1,0 +1,313 @@
+/* .mainServicesdowb{
+  position: relative;
+  
+}
+.wrapServicesDown{
+    display: flex;
+}
+.wrapServicesDown .left_Servic_Setion{
+ width:55%;
+ background: #222f59;
+    padding: 80px 50px;
+    border-radius: 20px;
+    min-height: 300px;
+    box-sizing: border-box;
+}
+.wrapServicesDown .right_Service_Section {
+    width: 45%;
+    padding-left: 60px;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+.mainServicesdowb::before {
+    content: '';
+    height: 80%;
+    background-color: #e3e9fb;
+    position: absolute;
+    width: 52vw;
+    top: 10%;
+    right: 0;
+    z-index: -1;
+}
+.tabItem {
+    padding: 15px 30px;
+    background-color: #f1f1f1;
+    margin: 0 30px 35px 30px;
+    box-sizing: border-box;
+    border-radius: 25px;   
+    
+}
+.tabItem button{
+    width: 100%;
+    border: none;
+    text-align: left;
+    font-size: 17px;
+    color: #222f59;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.tabItem .active{
+    color: #1bbceb;
+    transition: 0.5s;
+}
+.tabContent{
+    font-size: 14px;
+    color: gray;
+    padding: 15px 0;
+    line-height: 22px;
+}
+
+
+
+#prr{
+    padding-bottom: 20px;
+}
+.tabButton{
+    display: flex;
+    justify-content: space-between;
+}
+.cl{
+    background-color: #222f59;
+    color: #f1f1f1;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    align-content: center;
+    font-size: 22px;
+    
+} */
+/* ============ Base Styles ============ */
+.mainServicesdowb {
+  position: relative;
+  padding: 80px 20px;
+  background-color: #ffffff;
+}
+
+.mainServicesdowb::before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  right: 0; 
+  width: 60vw;
+  height: 90%;
+  background-color: #e3e9fb;
+  z-index: 0;
+  border-radius: 30% 0 0 30%;
+}
+.titlemain{
+  font-size: 36px;
+ 
+ font-family: "Edu NSW ACT Hand Pre", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal; 
+  text-align: center;
+}
+
+/* Flex Layout */
+.wrapServicesDown {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* ============ Left Section ============ */
+.left_Servic_Setion {
+  background: #222f59;
+  padding: 60px 40px;
+  border-radius: 20px;
+  color: white;
+  flex: 1 1 50%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+}
+
+/* ============ Right Section ============ */
+.right_Service_Section {
+  flex: 1 1 45%;
+  padding-left: 40px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* ============ Detail Box ============ */
+.detailbx {
+  padding: 20px;
+  z-index: 3;
+}
+
+.mainpara {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.paracoolr {
+  color: #1bbceb;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.mainheading {
+  font-size: 28px;
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 15px;
+}
+
+#prr {
+  padding-bottom: 20px;
+}
+
+/* ============ Tab Item ============ */
+.tabItem {
+  padding: 15px 30px;
+  background-color: #f1f1f1;
+  margin-bottom: 25px;
+  border-radius: 25px;
+}
+
+.tabItem button {
+  width: 100%;
+  border: none;
+  text-align: left;
+  font-size: 17px;
+  color: #222f59;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.tabItem .active {
+  color: #1bbceb;
+}
+
+.tabContent {
+  font-size: 14px;
+  color: gray;
+  padding-top: 15px;
+  line-height: 22px;
+}
+
+/* ============ Plus-Minus Icon ============ */
+.cl {
+  background-color: #222f59;
+  color: #f1f1f1;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
+  transition: transform 0.2s ease;
+}
+ .spin {
+  animation: rotate360 0.2s linear;
+}
+
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ============ Responsive Breakpoints ============ */
+
+/* ✅ Tablets (max-width: 992px) */
+@media screen and (max-width: 992px) {
+  .wrapServicesDown {
+    flex-direction: column;
+  }
+
+  .left_Servic_Setion,
+  .right_Service_Section {
+    width: 100%;
+    padding: 40px 20px;
+  }
+
+  .right_Service_Section {
+    padding-left: 20px;
+    background-color: #e9ecff;
+    border-radius: 20px;
+  }
+
+  .mainheading {
+    font-size: 24px;
+  }
+  .mainServicesdowb::before{
+    display: none;
+  }
+}
+
+/* ✅ Mobiles (max-width: 576px) */
+@media screen and (max-width: 576px) {
+  .mainheading {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .mainpara,
+  #prr {
+    text-align: center;
+  }
+
+  .tabItem {
+    padding: 15px 20px;
+  }
+
+  .tabItem button {
+    font-size: 16px;
+  }
+
+  .cl {
+    width: 28px;
+    height: 28px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+.mainServicesdowb {
+    padding: 40px 0 0 0;
+}
+ .squareBox {
+    padding: 60px 20px 40px 20px;
+    margin-bottom: 20px;
+}
+  
+}
+.read-more-btn {
+  padding: 10px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(to right, #3b82f6, #6366f1); /* blue to indigo */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.read-more-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(99, 102, 241, 0.4);
+}
+
+.read-more-btn:active {
+  transform: scale(0.97);
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+}
+#httppy{
+  list-style: none;
+}

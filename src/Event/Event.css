@@ -1,0 +1,169 @@
+.mainEvent{
+    padding-top: 70px;
+}
+.nmmev{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.nmmev h2{
+    font-size: 36px;
+    font-weight: 600;
+    margin: 5px 0;
+}
+.nmmev p{
+    color: #222f59;
+    font-weight: bold;
+}
+.contevent {
+    display: flex;
+    background-color: #e9ecff;
+    background-color: #e9ecff;
+    border-radius: 25px;
+    position: relative;
+    padding: 40px;
+    margin-bottom: 100px;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+#mkkkl{
+    margin-bottom: 0;
+}
+
+.contevent img {
+    height: 220px;
+    width: 260px;
+    position: relative;
+    top: 0;
+    border-radius: 25px;
+}
+
+.evcourse{
+    width: 300px;
+}
+.evcourse p{
+    width: 150px;
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 7px 0;
+    border-radius: 20px;
+    margin: 0 0 15PX 0;
+    color: #222f59;
+    font-size: 15px;
+    font-weight: 500;
+}
+.evcourse h3{
+    font-size: 22px;
+    font-weight: 600;
+}
+.btondark{
+    color: #222f59;
+    padding: 10px 0px;
+    font-size: 20px;
+}
+.data{
+    width: 250px;
+}
+.duration{
+    width: 155px;
+}
+.price{
+    width: 150px;
+}
+.halfCircle {
+    position: absolute;
+    right: 0;
+    top: 22px;
+    background-color: #222f59;
+    width: 60px;
+    height: 120px;
+    display: inline-block;
+    text-align: center;
+    line-height: 120px;
+    font-size: 18px;
+    z-index: 1;
+    color: #fff;
+    border-radius: 60px 0px 0px 60px;
+}
+#eventhehgd{
+    padding-bottom: 70px;
+}
+@media (max-width: 600px){
+    .mainEvent {
+    padding-top: 80px;
+
+}
+.contevent{
+    margin-top: 30px;
+}
+.contevent:nth-child(3){
+    margin-top: 30px !important;
+  }
+  .halfCircle {
+    top: 40%;
+    display: none;
+}
+.evcourse h3 {
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    padding-bottom: 10px !important;
+    
+}
+}
+@media (max-width: 992px){
+ .wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.data{
+    width: 100px;
+    float: left;
+    text-align: center;
+    padding-top:10px;
+}
+.btondark{
+    font-size: 18px;
+    font-weight: 600;
+    padding-top:5px;
+}
+.duration{ 
+    float: left;
+    width: 100px;
+    text-align: center;
+     padding-top:10px;
+}
+.price{
+    float: left;
+    width: 100px;
+    text-align: center;
+    padding-top:10px;
+}
+  .contevent {
+    max-width: 320px;
+    margin-bottom: 0px;
+    display: block;
+    height: auto;
+  }
+  .contevent:nth-child(3){
+    margin-top: 60px;
+  }
+  .contevent img {
+    height: 220px;
+    width: 260px;
+    position: relative;
+    top: -65px;
+    border-radius: 25px;
+}
+.evcourse h3 {
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    border-bottom: 1px solid gainsboro;
+}
+.halfCircle {
+    top: 40%;
+}
+
+}

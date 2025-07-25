@@ -1,0 +1,141 @@
+/* .flexxx{
+    display: flex;
+    color: #f1f1f1;
+}
+.courseDown{
+        position: relative;
+    padding: 120px 0;
+    overflow: hidden;
+    margin-right: 115px;
+    padding-left: 115px;
+    background-color: #222f59;
+    border-bottom-right-radius: 200px;
+    border-top-right-radius: 200px;
+}
+.numrr{
+    font-size: 48px;
+    
+}
+#bgwhite{
+    background-color: white;
+}
+.flexxx .contfles{
+    width:calc(100%/4);
+}
+
+
+.flexxx::before {
+    content: '';
+    width: 170px;
+    height: 170px;
+
+    position: absolute;
+    border-radius: 50%;
+    top: -30%;
+    left: 17%;
+    border: 2px solid #f1f1f152;
+    box-shadow: 0 0 0px 50px #222f59, 0 0 0px 52px #f1f1f152;
+    z-index: 1;
+     animation: pulse-animation 2s infinite;
+} */
+
+.flexxx {
+  display: flex;
+  flex-wrap: wrap;
+  color: #f1f1f1;
+  position: relative;
+  z-index: 1;
+}
+
+.courseDown {
+  position: relative;
+  padding: 120px 0;
+  overflow: hidden;
+  margin-right: 115px;
+  padding-left: 115px;
+  background-color: #222f59;
+  border-bottom-right-radius: 200px;
+  border-top-right-radius: 200px;
+}
+
+.numrr {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+#bgwhite {
+  background-color: white;
+}
+
+.flexxx .contfles {
+  width: calc(100% / 4);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Circle Effect */
+.courseDown::before {
+  content: '';
+  width: 170px;
+  height: 170px;
+  position: absolute;
+  border-radius: 50%;
+  top: -30%;
+  left: 17%;
+  border: 2px solid #f1f1f152;
+  box-shadow: 0 0 0px 50px #222f59, 0 0 0px 52px #f1f1f152;
+  z-index: 1;
+  animation: pulse-animation 2s infinite;
+}
+
+
+
+/* ===============================
+   ✅ Responsive Breakpoints
+=================================*/
+
+/* Tablet: 2 columns */
+@media (max-width: 992px) {
+  .flexxx .contfles {
+    width: 50%;
+  }
+
+  .courseDown {
+    padding-left: 40px;
+    margin-right: 40px;
+    border-top-right-radius: 250px;
+    border-bottom-right-radius: 250px;
+  }
+.courseDown::before {
+    top: -25%;
+ 
+}
+  .numrr {
+    font-size: 42px;
+  }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 576px) {
+  .flexxx .contfles {
+    width: 100%;
+  }
+
+.courseDown {
+    padding: 110px 20px;
+    margin-right: 0;
+    padding-left: 20px;
+    border-top-right-radius: 350px;
+    border-bottom-right-radius: 350px;
+}
+.courseUp {
+    margin-bottom: 70px;
+}
+  .numrr {
+    font-size: 40px;
+  }
+
+.courseDown::before {
+    top: -18%;
+}
+}

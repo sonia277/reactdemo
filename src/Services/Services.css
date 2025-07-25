@@ -1,0 +1,194 @@
+/* .wrapservice{
+    display: flex;
+}
+.mainsrvices{
+    padding-top: 130px;
+}
+
+.circuleIcon{
+    background-color: #222f59;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    text-align: center;
+    align-content: center;
+    position: absolute;
+    top: -37%;
+    right: -20%;
+    transition: 0.5s;
+}
+.circuleIcon:hover{
+    font-size: 50px;
+}
+#mhjll{
+    margin-left: 105px;
+    margin-right: 105px;
+}
+.squareBox{
+    position: relative;
+    width: 280px;
+    background-color: 	#e9ecff;
+    height: auto;
+    padding: 80px 30px 50px 30px;
+    border-radius: 25px;
+    margin: 100PX 0PX;
+   
+}
+.squareBox h3{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #1e1e1e;
+}
+.squareBox p{
+    color: #4a4a4a;
+    margin-bottom: 25px;
+}
+.sqboxbtn{
+    padding: 10px 25px;
+    border: none;
+    font-size: 15px;
+    background-color: #fff;
+    border-radius: 20px;
+    color: #1bbceb;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.sqboxbtn:hover{
+    color: white;
+    background-color: #1bbceb;
+}
+
+  */
+/* Main wrapper */
+.mainsrvices {
+    padding-top: 130px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Flex layout for cards */
+.wrapservice {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Individual card container */
+.allconsr {
+    flex: 1 1 300px;
+    max-width: 32%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Card box styling */
+.squareBox {
+    position: relative;
+    width: 100%;
+    max-width: 320px;
+    background-color: #e9ecff;
+    padding: 100px 30px 50px 30px;
+    border-radius: 25px;
+    text-align: center;
+    margin: 60px auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.squareBox:hover {
+    transform: translateY(-5px);
+}
+
+/* Icon circle */
+.circuleIcon {
+    background-color: #222f59;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+
+.circuleIcon img {
+    width: 80px;
+    height: 80px;
+}
+
+/* Card content */
+.squareBox h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    color: #1e1e1e;
+}
+
+.squareBox p {
+    color: #4a4a4a;
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Button */
+.sqboxbtn {
+    padding: 10px 25px;
+    border: none;
+    font-size: 15px;
+    background-color: #fff;
+    border-radius: 20px;
+    color: #1bbceb;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.sqboxbtn:hover {
+    color: white;
+    background-color: #1bbceb;
+}
+
+/* 🧠 Remove unnecessary ID spacing */
+#mhjll {
+    margin: 0;
+}
+
+/* 🔁 Responsive Breakpoints */
+
+/* Tablet (2 cards per row) */
+@media screen and (max-width: 992px) {
+    .allconsr {
+        max-width: 47%;
+    }
+}
+
+/* Mobile (1 card per row) */
+@media screen and (max-width: 600px) {
+    .allconsr {
+        max-width: 100%;
+    }
+    .mainsrvices {
+    padding-top: 80px !important;
+}
+    .squareBox {
+        padding: 120px 20px 40px 20px;
+    }
+
+    .circuleIcon {
+        width: 120px;
+        height: 120px;
+        top: -60px;
+    }
+
+    .circuleIcon img {
+        width: 60px;
+        height: 60px;
+    }
+}

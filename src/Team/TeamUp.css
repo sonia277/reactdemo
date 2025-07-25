@@ -1,0 +1,112 @@
+
+.warapTeamup {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 60px 20px;
+    margin-top: 100px;
+    padding-bottom: 0;
+}
+.clxs{
+    padding-top: 70px;
+}
+.team_card {
+    width:calc(100%/4 - 30px);
+    text-align: center;
+    position: relative;
+
+}
+
+.mainteam {
+    background-image: url(/src/assets/arrow.png);
+    background-repeat: no-repeat;
+    background-position: top 28% center;
+    background-size: contain;
+    background-color: transparent;
+}
+
+.boxteamup {
+    background-color: #e9ecff;
+    border-radius: 25px;
+    padding: 130px 30px 40px 30px;
+    position: relative;    
+}
+
+.team_card img {
+   border-radius: 50%;
+   position: absolute;
+   top: -37%;
+    right: 15%;
+   z-index: 2;
+   width: 200px;
+   height: 200px;
+  
+}
+.team_card p {
+    color: #222f59;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.team_name {
+    font-size: 22px;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+.teacherSocialmedia {
+    margin-top: 15px;
+}
+
+.teacherSocialmedia a {
+    color: #1bbceb;
+    font-size: 22px;
+    margin: 0 8px;
+    transition: 0.5s;
+}
+
+.teacherSocialmedia a:hover {
+    color: #222f59;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+/* Tablet: 2 cards per row */
+@media screen and (max-width: 992px) {
+    .team_card {
+        width: calc(50% - 15px);
+        margin-top: 150px;
+    }
+    .team_card img {
+    border-radius: 50%;
+    position: absolute;
+    top: -30%;
+    right: 25%;
+    z-index: 2;
+    width: 200px;
+    height: 200px;
+}
+.warapTeamup {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 60px 20px;
+    margin-top: 0px;
+}
+.mainteam{
+    background-image: none;
+}
+}
+
+/* Mobile: 1 card per row */
+@media screen and (max-width: 600px) {
+    .team_card {
+        width: 100%;
+    }
+    .warapTeamup {
+    padding: 50px 20px;
+    margin-top: 0px;
+    
+}
+
+}
